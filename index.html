@@ -1,73 +1,26 @@
 <!DOCTYPE HTML>
-<html lang="en">
-
+<html>
 <head>
-    <title>DivyaSimha</title>
+    <title>DivyaSimha - Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #f7f7f7, #e3e3e3);
-        }
-
-        #intro {
-            animation: fadeInDown 1s;
-        }
-
-        h1,
-        h2 {
-            color: #333;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        .button {
-            background: linear-gradient(45deg, #ff6b6b, #ffcc5c);
-            border: none;
-            border-radius: 50px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .button:hover {
-            transform: scale(1.1);
-        }
-
-        .image img {
-            transition: transform 0.3s ease-in-out;
-            border-radius: 15px;
-        }
-
-        .image img:hover {
-            transform: scale(1.05);
-        }
-
-        nav ul.links {
-            justify-content: center;
-        }
-
-        #main {
-            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-        }
+        /* Add the CSS animations here */
     </style>
 </head>
-
 <body class="is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
 
         <!-- Intro -->
-        <div id="intro" class="animate__animated animate__fadeInDown">
+        <div id="intro" class="fade-in">
             <h1>Lakshmi Divya Simha Goud</h1>
-            <p>Python Developer | Data Analyst</p>
+            <p>Innovative Python Developer & Data Analyst | Turning Data into Actionable Insights</p>
             <ul class="actions">
-                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                <li><a href="#projects" class="button icon solid solo fa-arrow-down scrolly">Explore My Work</a></li>
             </ul>
         </div>
 
@@ -79,7 +32,8 @@
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
-                <li class="active"><a href="index.html">Projects</a></li>
+                <li class="active"><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="icons">
                 <li><a href="https://www.linkedin.com/in/lakshmi-divya-simha-goud-s-65397b1a1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -91,31 +45,122 @@
         <div id="main">
 
             <!-- Featured Post -->
-            <article class="post featured animate__animated animate__fadeInUp">
+            <article class="post featured fade-in">
                 <header class="major">
                     <h2><a href="#">E-commerce Products Recommender</a></h2>
                 </header>
-                <a href="#" class="image main"><img src="images/bag.png" alt="" /></a>
-                <p>A Streamlit-based product recommendation system using content-based filtering to provide personalized product suggestions.</p>
+                <a href="#" class="image main">
+                    <img src="images/bag.png" alt="E-commerce Recommender" />
+                </a>
+                <p>Developed a personalized product recommendation system using content-based filtering with Streamlit. Enhance user experience by suggesting relevant products based on user preferences.</p>
                 <ul class="actions special">
                     <li><a href="https://github.com/simha-p/product_Recommendation" class="button large">View Project</a></li>
                 </ul>
             </article>
 
-            <!-- Posts -->
-            <section class="posts animate__animated animate__fadeInUp">
-                <article>
+            <!-- Projects -->
+            <section id="projects">
+                <article class="post fade-in">
                     <header>
-                        <h2><a href="#">Excel | CoffeeShopSales</a></h2>
+                        <h2><a href="#">Excel | Coffee Shop Sales</a></h2>
                     </header>
-                    <a href="#" class="image fit"><img src="images/C.jpeg" alt="" /></a>
-                    <p>Create a dashboard of sales data for coffee and transform raw data into actionable insights that drive smarter business decisions.</p>
+                    <a href="#" class="image fit">
+                        <img src="images/C.jpeg" alt="Coffee Shop Sales" />
+                    </a>
+                    <p>Created a comprehensive dashboard to analyze sales data for a coffee shop, transforming raw data into actionable insights that drive smarter business decisions.</p>
                     <ul class="actions special">
                         <li><a href="https://github.com/simha-p/Coffe_shop_sales" class="button large">View Project</a></li>
                     </ul>
                 </article>
-                <!-- Repeat similar structure for other posts -->
+                <article class="post">
+                    <header>
+                        <h2><a href="#">Unicorn Startups Analysis</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/u.jpeg" alt="Unicorn Startups" /></a>
+                    <p>Performed SQL queries and data analysis on unicorn companies to uncover market trends and insights.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Unicorn_Startups_Analysis" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">AI ChatBot</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/SUPERHERO FRIEND (1).png" alt="AI ChatBot" /></a>
+                    <p>Superbot is an intelligent AI assistant that combines the power of Django and Google API to revolutionize task management and information retrieval.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Superbot" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">Amazon Sales Analysis</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/a.jpeg" alt="Amazon Sales Analysis" /></a>
+                    <p>Tableau project providing a comprehensive analysis of Amazon's sales data, offering insights into trends and performance.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Amazon-Sales-Analysis" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">Power BI | Loan Portfolio</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/WhatsApp Image 2024-07-25 at 6.06.51 PM.jpeg" alt="Loan Portfolio" /></a>
+                    <p>Risk assessment and analysis of loan portfolio risk for banks using Power BI visualization tool to identify potential risks and trends.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Loan_Portfolio" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">EDA | Electric Vehicles Analysis</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Ev.jpeg" alt="Electric Vehicles Analysis" /></a>
+                    <p>Exploratory Data Analysis on electric vehicles to gain insights about network distribution capacity and grid reliability.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/EDA_EV" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">EDA | Spotify Analysis</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/S.jpeg" alt="Spotify Analysis" /></a>
+                    <p>Exploratory Data Analysis on Spotify app to identify top artists and albums using Python libraries such as NumPy, SciPy, Pandas, and Matplotlib.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Explotory-Data-Analysis/blob/main/SpotifyEDA.ipynb" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">Power BI | Top YouTubers</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Y.jpeg" alt="Top YouTubers" /></a>
+                    <p>Created a dashboard providing insights into the top Indian YouTubers in 2024 using Power BI for detailed visualizations.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Excel_to_powerbi" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <header>
+                        <h2><a href="#">Tableau | Amazon Prime Movies</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/P.jpeg" alt="Amazon Prime Movies" /></a>
+                    <p>Developed a Tableau dashboard for visualizing Amazon Prime movies, offering insights into viewing trends and preferences.</p>
+                    <ul class="actions special">
+                        <li><a href="https://public.tableau.com/app/profile/lakshmi.divyasimhagoud.s/viz/Amazon_Prime_Movies_17207778512900/Dashboard1?publish=yes" class="button">View Project</a></li>
+                    </ul>
+                </article>
             </section>
+
         </div>
 
         <!-- Footer -->
@@ -123,15 +168,15 @@
             <section class="split contact">
                 <section class="alt">
                     <h3>Address</h3>
-                    <p>Hyderabad<br />Telangana, 500038</p>
+                    <p>Hyderabad, Telangana, 500038</p>
                 </section>
                 <section>
                     <h3>Mobile</h3>
-                    <p><a href="#">+91-8688798633</a></p>
+                    <p><a href="tel:+918688798633">+91-8688798633</a></p>
                 </section>
                 <section>
                     <h3>Email</h3>
-                    <p><a href="#">simhagoud9999@gmail.com</a></p>
+                    <p><a href="mailto:simhagoud9999@gmail.com">simhagoud9999@gmail.com</a></p>
                 </section>
                 <section>
                     <h3>Social</h3>
@@ -141,25 +186,38 @@
                     </ul>
                 </section>
             </section>
+            <div id="copyright">
+                <ul><li>&copy; 2024 Lakshmi Divya Simha Goud</li><li>Design by <a href="#">simha</a></li></ul>
+            </div>
         </footer>
 
-        <!-- Copyright -->
-        <div id="copyright">
-            <ul>
-                <li>&copy; 2024 DivyaSimha</li>
-                <li>Design: <a href="#">simha</a></li>
-            </ul>
-        </div>
     </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
 
+            const checkInView = () => {
+                fadeElements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        el.classList.add('in-view');
+                    } else {
+                        el.classList.remove('in-view');
+                    }
+                });
+            };
+
+            checkInView();
+            window.addEventListener('scroll', checkInView);
+        });
+    </script>
+
+</body>
 </html>
