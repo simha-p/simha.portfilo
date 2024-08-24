@@ -1,55 +1,165 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Divya Simha - Python Developer & Data Analyst</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<html lang="en">
 
-		<!-- Header -->
-		<header id="header">
-			<h1>Lakshmi Divya Simha Goud</h1>
-			<p>Python Developer | Data Analyst</p>
-			<nav>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/lakshmi-divya-simha-goud-s-65397b1a1/" class="icon brands fa-linkedin">LinkedIn</a></li>
-					<li><a href="https://github.com/simha-p" class="icon brands fa-github">GitHub</a></li>
-				</ul>
-			</nav>
-		</header>
+<head>
+    <title>DivyaSimha</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f7f7f7, #e3e3e3);
+        }
 
-		<!-- Main -->
-		<div id="main">
-			<section class="projects">
-				<article class="project">
-					<h2><a href="https://github.com/simha-p/product_Recommendation">E-commerce Products Recommender</a></h2>
-					<p>Streamlit-based product recommendation system using content-based filtering.</p>
-				</article>
-				<article class="project">
-					<h2><a href="https://github.com/simha-p/Coffe_shop_sales">Excel | CoffeeShopSales</a></h2>
-					<p>Dashboard creation and sales data analysis for actionable insights.</p>
-				</article>
-				<article class="project">
-					<h2><a href="https://github.com/simha-p/Unicorn_Startups_Analysis">Unicorn Startups Analysis</a></h2>
-					<p>SQL queries for analyzing unicorn companies.</p>
-				</article>
-				<article class="project">
-					<h2><a href="https://github.com/simha-p/Superbot">AI ChatBot</a></h2>
-					<p>Intelligent AI assistant leveraging Django and Google API for task management.</p>
-				</article>
-				<article class="project">
-					<h2><a href="https://github.com/simha-p/Amazon-Sales-Analysis">Amazon Sales Analysis</a></h2>
-					<p>Tableau-based analysis of Amazon's sales data.</p>
-				</article>
-			</section>
-		</div>
+        #intro {
+            animation: fadeInDown 1s;
+        }
 
-		<!-- Footer -->
-		<footer id="footer">
-			<p>Hyderabad, Telagana | +91-8688798633 | <a href="mailto:simhagoud9999@gmail.com">simhagoud9999@gmail.com</a></p>
-		</footer>
+        h1,
+        h2 {
+            color: #333;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
 
-	</body>
+        .button {
+            background: linear-gradient(45deg, #ff6b6b, #ffcc5c);
+            border: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        .image img {
+            transition: transform 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+
+        .image img:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul.links {
+            justify-content: center;
+        }
+
+        #main {
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro" class="animate__animated animate__fadeInDown">
+            <h1>Lakshmi Divya Simha Goud</h1>
+            <p>Python Developer | Data Analyst</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">DivyaSimha</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/lakshmi-divya-simha-goud-s-65397b1a1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/simha-p" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured animate__animated animate__fadeInUp">
+                <header class="major">
+                    <h2><a href="#">E-commerce Products Recommender</a></h2>
+                </header>
+                <a href="#" class="image main"><img src="images/bag.png" alt="" /></a>
+                <p>A Streamlit-based product recommendation system using content-based filtering to provide personalized product suggestions.</p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/simha-p/product_Recommendation" class="button large">View Project</a></li>
+                </ul>
+            </article>
+
+            <!-- Posts -->
+            <section class="posts animate__animated animate__fadeInUp">
+                <article>
+                    <header>
+                        <h2><a href="#">Excel | CoffeeShopSales</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/C.jpeg" alt="" /></a>
+                    <p>Create a dashboard of sales data for coffee and transform raw data into actionable insights that drive smarter business decisions.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/simha-p/Coffe_shop_sales" class="button large">View Project</a></li>
+                    </ul>
+                </article>
+                <!-- Repeat similar structure for other posts -->
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>Hyderabad<br />Telangana, 500038</p>
+                </section>
+                <section>
+                    <h3>Mobile</h3>
+                    <p><a href="#">+91-8688798633</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="#">simhagoud9999@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/lakshmi-divya-simha-goud-s-65397b1a1/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/simha-p" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul>
+                <li>&copy; 2024 DivyaSimha</li>
+                <li>Design: <a href="#">simha</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
