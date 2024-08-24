@@ -7,7 +7,107 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        /* Add the CSS animations here */
+        /* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effects on Buttons */
+.button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Image Hover Effects */
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+.image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+/* Project Cards Animation */
+.post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sliding Navigation Menu */
+#nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    transition: left 0.3s ease;
+}
+
+#nav.show {
+    left: 0;
+}
+
+/* Smooth Background Fade-in for Images */
+.image img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.image img.loaded {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animating the Social Icons in Footer */
+.footer .icons.alt li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .icons.alt li a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
     </style>
 </head>
 <body class="is-preload">
